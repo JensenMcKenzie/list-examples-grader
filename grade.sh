@@ -23,11 +23,11 @@ then
             exit 0
         fi
         t=$(grep -i "Tests run" output.txt)
-        mails=$(echo $t | tr " " "\n")
+        elements=$(echo $t | tr " " "\n")
         counter=0
         total=""
         passed=""
-        for i in $mails
+        for i in $elements
         do
             if [ $counter == 2 ]
             then
